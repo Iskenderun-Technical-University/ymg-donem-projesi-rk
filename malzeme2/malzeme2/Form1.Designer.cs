@@ -163,6 +163,7 @@
             this.label4.Size = new System.Drawing.Size(103, 17);
             this.label4.TabIndex = 9;
             this.label4.Text = "Minimum Stok :";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label2
             // 
