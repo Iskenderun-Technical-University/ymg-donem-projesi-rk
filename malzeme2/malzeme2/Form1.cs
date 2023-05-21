@@ -36,5 +36,10 @@ namespace malzeme2
         {
 
         }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
