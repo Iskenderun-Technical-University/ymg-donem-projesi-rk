@@ -1,0 +1,13 @@
+C:\Users\LENOVO\Desktop\YNG\malzeme2\malzeme2\bin\Debug\Database1.mdf
+C:\Users\LENOVO\Desktop\YNG\malzeme2\malzeme2\bin\Debug\Database1_log.ldf
+C:\Users\LENOVO\Desktop\YNG\malzeme2\malzeme2\bin\Debug\malzeme2.exe.config
+C:\Users\LENOVO\Desktop\YNG\malzeme2\malzeme2\bin\Debug\malzeme2.exe
+C:\Users\LENOVO\Desktop\YNG\malzeme2\malzeme2\bin\Debug\malzeme2.pdb
+C:\Users\LENOVO\Desktop\YNG\malzeme2\malzeme2\obj\Debug\malzeme2.csproj.AssemblyReference.cache
+C:\Users\LENOVO\Desktop\YNG\malzeme2\malzeme2\obj\Debug\malzeme2.csproj.SuggestedBindingRedirects.cache
+C:\Users\LENOVO\Desktop\YNG\malzeme2\malzeme2\obj\Debug\malzeme2.Form1.resources
+C:\Users\LENOVO\Desktop\YNG\malzeme2\malzeme2\obj\Debug\malzeme2.Properties.Resources.resources
+C:\Users\LENOVO\Desktop\YNG\malzeme2\malzeme2\obj\Debug\malzeme2.csproj.GenerateResource.cache
+C:\Users\LENOVO\Desktop\YNG\malzeme2\malzeme2\obj\Debug\malzeme2.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Desktop\YNG\malzeme2\malzeme2\obj\Debug\malzeme2.exe
+C:\Users\LENOVO\Desktop\YNG\malzeme2\malzeme2\obj\Debug\malzeme2.pdb
