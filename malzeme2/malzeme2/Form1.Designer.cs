@@ -49,9 +49,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.malzemeBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.database1DataSet = new malzeme2.Database1DataSet();
-            this.malzemeTableAdapter = new malzeme2.Database1DataSetTableAdapters.MalzemeTableAdapter();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.malzemeKoduDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.malzemeAdiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,6 +56,9 @@
             this.birimFiyatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.minimumStokDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tedarikSuresiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.malzemeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.database1DataSet = new malzeme2.Database1DataSet();
+            this.malzemeTableAdapter = new malzeme2.Database1DataSetTableAdapters.MalzemeTableAdapter();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -234,6 +234,7 @@
             this.button3.TabIndex = 5;
             this.button3.Text = "GÜNCELLE";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // dataGridView1
             // 
@@ -257,20 +258,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(680, 202);
             this.dataGridView1.TabIndex = 6;
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
-            // 
-            // malzemeBindingSource
-            // 
-            this.malzemeBindingSource.DataMember = "Malzeme";
-            this.malzemeBindingSource.DataSource = this.database1DataSet;
-            // 
-            // database1DataSet
-            // 
-            this.database1DataSet.DataSetName = "Database1DataSet";
-            this.database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // malzemeTableAdapter
-            // 
-            this.malzemeTableAdapter.ClearBeforeFill = true;
             // 
             // Id
             // 
@@ -322,6 +309,20 @@
             this.tedarikSuresiDataGridViewTextBoxColumn.HeaderText = "TedarikSuresi";
             this.tedarikSuresiDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.tedarikSuresiDataGridViewTextBoxColumn.Name = "tedarikSuresiDataGridViewTextBoxColumn";
+            // 
+            // malzemeBindingSource
+            // 
+            this.malzemeBindingSource.DataMember = "Malzeme";
+            this.malzemeBindingSource.DataSource = this.database1DataSet;
+            // 
+            // database1DataSet
+            // 
+            this.database1DataSet.DataSetName = "Database1DataSet";
+            this.database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // malzemeTableAdapter
+            // 
+            this.malzemeTableAdapter.ClearBeforeFill = true;
             // 
             // Form1
             // 
