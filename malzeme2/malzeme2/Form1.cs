@@ -117,5 +117,35 @@ namespace malzeme2
                 textBox1.Clear(); textBox2.Clear(); textBox3.Clear(); textBox4.Clear(); textBox5.Clear(); textBox6.Clear();
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+           
+                //SİL 
+                try
+                {
+                    if (check(textBox1.Text) == true || check(textBox2.Text) == true || check(textBox3.Text) == true || check(textBox4.Text) == true || check(textBox5.Text) == true || check(textBox6.Text) == true)
+                    {
+                        MessageBox.Show("please enter the required data", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        con.Open();
+                        string query = "DELETE FROM malzeme WHERE id= '" + dataGridView1.CurrentRow.Cells[0].Value + "'";
+                        SqlCommand cmd = new SqlCommand(query, con);
+                        cmd.ExecuteNonQuery();
+                        con.Close();
+                        MessageBox.Show("deleted successfully");
+                        dataGridView1.DataSource = LoadUserTable();
+                        textBox1.Clear(); textBox2.Clear(); textBox3.Clear(); textBox4.Clear(); textBox5.Clear(); textBox6.Clear();
+                    }
+                }
+
+                catch (Exception)
+                {
+                    MessageBox.Show("Hata!!");
+                }
+            
+        }
     }
 }
